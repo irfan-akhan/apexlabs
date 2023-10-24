@@ -52,7 +52,12 @@ export default function Footer() {
 				justify={"center"}
 				align={"center"}
 			>
-				<Image src="/logo.png" width="200" height="150" />
+				<Image
+					src="/logo.png"
+					alt="apexlabs logo"
+					width="200"
+					height="150"
+				/>
 
 				<Stack direction={"row"} spacing={6}>
 					<Box as="a" href={"#"}>

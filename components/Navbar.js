@@ -62,7 +62,12 @@ export default function Navbar() {
 					flex={{ base: 1 }}
 					justify={{ base: "center", md: "start" }}
 				>
-					<Image src="/logo.png" width="120" height="40" />
+					<Image
+						src="/logo.png"
+						alt="apexlabs logo"
+						width="120"
+						height="40"
+					/>
 
 					<Flex display={{ base: "none", md: "flex" }} ml={10}>
 						<DesktopNav />

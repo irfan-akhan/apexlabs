@@ -82,12 +82,12 @@ export default function Bio() {
 						Transforming Ideas into Software Solutions
 					</Heading>
 					<Text color={"gray.500"} fontSize={"lg"}>
-						At Apex labs, we're not just a software development
+						{`At Apex labs, we're not just a software development
 						company; we're your partner in turning your vision into
 						reality. With a passion for innovation, a commitment to
 						quality, and a team of experienced developers, we
 						specialize in crafting cutting-edge software solutions
-						tailored to your unique needs.
+						tailored to your unique needs.`}
 					</Text>
 					<Stack
 						spacing={4}

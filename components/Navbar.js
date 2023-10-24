@@ -75,13 +75,13 @@ export default function Navbar() {
 				</Flex>
 
 				<Button
-					as={"a"}
 					display={{ base: "none", md: "inline-flex" }}
 					fontSize={"sm"}
 					fontWeight={600}
 					color={"white"}
 					bg={"green.400"}
-					href={"#"}
+					as={"a"}
+					href={"/contact"}
 					_hover={{
 						bg: "green.300",
 					}}
@@ -276,20 +276,21 @@ const MobileNavItem = ({ label, children, href }) => {
 const NAV_ITEMS = [
 	{
 		label: "Company",
-		children: [
-			{
-				label: "Who we are",
-				href: "#",
-			},
-			{
-				label: "About us",
-				href: "#",
-			},
-			{
-				label: "Careers",
-				href: "#",
-			},
-		],
+		// children: [
+		// 	{
+		// 		label: "Who we are",
+		// 		href: "#",
+		// 	},
+		// 	{
+		// 		label: "About us",
+		// 		href: "#",
+		// 	},
+		// 	{
+		// 		label: "Careers",
+		// 		href: "#",
+		// 	},
+		// ],
+		href: "#company",
 	},
 	{
 		label: "Services",
@@ -323,6 +324,6 @@ const NAV_ITEMS = [
 	},
 	{
 		label: "Contact Us",
-		href: "#",
+		href: "/contact",
 	},
 ];

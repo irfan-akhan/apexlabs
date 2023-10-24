@@ -59,7 +59,7 @@ const BioCard = ({ title, text, icon, iconBg }) => {
 
 export default function Bio() {
 	return (
-		<Container maxW={{ base: "100vw", md: "6xl" }} p={12}>
+		<Container maxW={{ base: "100vw", md: "6xl" }} p={12} id="company">
 			<SimpleGrid
 				columns={{ base: 1, md: 2 }}
 				spacing={10}

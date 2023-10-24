@@ -67,6 +67,8 @@ export default function Hero() {
 							px={6}
 							colorScheme={"red"}
 							bg={"red.400"}
+							as={"a"}
+							href={"/contact"}
 							_hover={{ bg: "red.500" }}
 						>
 							Have an Idea ?
@@ -76,8 +78,10 @@ export default function Hero() {
 							size={"lg"}
 							fontWeight={"normal"}
 							px={6}
+							as={"a"}
+							href={"#services"}
 						>
-							How It Works
+							Our Services
 						</Button>
 					</Stack>
 				</Stack>

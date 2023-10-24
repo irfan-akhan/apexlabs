@@ -52,7 +52,11 @@ import {
 	SiSalesforce,
 } from "react-icons/si";
 import { RiLuggageCartLine, RiNftLine, RiFlutterFill } from "react-icons/ri";
-import { AiFillControl, AiFillContainer } from "react-icons/ai";
+import {
+	AiFillControl,
+	AiFillContainer,
+	AiOutlineAndroid,
+} from "react-icons/ai";
 import { FcAndroidOs } from "react-icons/fc";
 import { TbBrandKotlin } from "react-icons/tb";
 import { LiaSalesforce } from "react-icons/lia";
@@ -60,7 +64,7 @@ import Card from "./Card";
 
 export default function Services() {
 	return (
-		<Container maxW="container.xl" p={12}>
+		<Container maxW="container.xl" p={12} id="services">
 			<Flex
 				flexDir="column"
 				// columns={{ base: 1, md: 2 }}
@@ -86,14 +90,7 @@ export default function Services() {
 					iconBg="green"
 					icons={[
 						{
-							icon: (
-								<Icon
-									as={FcAndroidOs}
-									w={7}
-									h={7}
-									color="blue"
-								/>
-							),
+							icon: <Icon as={AiOutlineAndroid} w={7} h={7} />,
 							text: "Android App",
 						},
 						{
@@ -122,14 +119,7 @@ export default function Services() {
 					iconBg="blue"
 					icons={[
 						{
-							icon: (
-								<Icon
-									as={SiJavascript}
-									w={7}
-									h={7}
-									color="blue"
-								/>
-							),
+							icon: <Icon as={SiJavascript} w={7} h={7} />,
 							text: "Javascript",
 						},
 						{
@@ -158,14 +148,7 @@ export default function Services() {
 					iconBg="red"
 					icons={[
 						{
-							icon: (
-								<Icon
-									as={AiFillControl}
-									w={7}
-									h={7}
-									color="blue"
-								/>
-							),
+							icon: <Icon as={AiFillControl} w={7} h={7} />,
 							text: "Custom Solutions",
 						},
 						{
@@ -190,14 +173,7 @@ export default function Services() {
 					iconBg="blue"
 					icons={[
 						{
-							icon: (
-								<Icon
-									as={FaEthereum}
-									w={7}
-									h={7}
-									color="blue"
-								/>
-							),
+							icon: <Icon as={FaEthereum} w={7} h={7} />,
 							text: "Ethereum",
 						},
 						{
@@ -227,14 +203,7 @@ export default function Services() {
 					iconBg="purple"
 					icons={[
 						{
-							icon: (
-								<Icon
-									as={LiaSalesforce}
-									w={7}
-									h={7}
-									color="blue"
-								/>
-							),
+							icon: <Icon as={LiaSalesforce} w={7} h={7} />,
 							text: "Salesforce Development",
 						},
 						{
@@ -253,9 +222,11 @@ export default function Services() {
 					title="Devops"
 					cardBg="#f9F9F9"
 					iconBg="gold"
-					text="We Adapt DevOps to Track
-					Development Process For
-					Superior Digital Solution."
+					icons={[
+						{
+							text: "We Adapt DevOps to Track Development Process For Superior Digital Solution.",
+						}
+					]}
 				/>
 			</Flex>
 		</Container>

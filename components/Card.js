@@ -49,7 +49,7 @@ export default function Card({
 				<Flex mt="4" gap="3" direction="column">
 					{icons.map((item, idx) => (
 						<Flex key={idx}>
-							{item?.icon}
+							{item?.icon && item?.icon}
 							<Text ml="4">{item.text}</Text>
 						</Flex>
 					))}

@@ -74,14 +74,14 @@ export default function Process() {
 					align="center"
 					icon={<Icon as={MdSupportAgent} w={10} h={10} />}
 					title="5.Quality Assurance"
-					text="Hyperlink values quality and provides 100% bug free application with no compromisation in it"
+					text="Apexlabs values quality and provides 100% bug free application with no compromisation in it"
 					iconBg="purple"
 				/>
 				<Card
 					align="center"
 					icon={<Icon as={BiCodeBlock} w={10} h={10} />}
 					title="6.Deployment"
-					text="After trial and following all processes, your app is ready to launch on the App store or Play Store."
+					text="After trial and following all processes, your app is ready to launch on the Web, App store or Play Store."
 					iconBg="teal"
 				/>
 				<Card

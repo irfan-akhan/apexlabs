@@ -1,32 +1,16 @@
 "use client";
 
+import { Container, Flex, Heading, Text, Icon } from "@chakra-ui/react";
+import { FaUserGraduate } from "react-icons/fa";
+import { BsMegaphone } from "react-icons/bs";
+import { RiShoppingBagFill } from "react-icons/ri";
+import { TbWorldWww } from "react-icons/tb";
 import {
-	Container,
-	SimpleGrid,
-	Flex,
-	Heading,
-	Text,
-	Stack,
-	StackDivider,
-	Icon,
-	useColorModeValue,
-} from "@chakra-ui/react";
-import {
-	IoLogoWebComponent,
-	IoCartSharp,
-	IoPhonePortraitSharp,
-} from "react-icons/io5";
-import { BiMobileAlt, BiCodeBlock, BiTimer } from "react-icons/bi";
-import {
-	FaInfinity,
-	FaPersonChalkboard,
-	FaArrowsDownToPeople,
-	FaPeopleArrows,
-	FaRegCommentAlt,
-} from "react-icons/fa";
-import { BsPersonHearts, BsBarChartFill } from "react-icons/bs";
-import { MdSupportAgent } from "react-icons/md";
-import { TbBrandDeliveroo } from "react-icons/tb";
+	MdOutlineRealEstateAgent,
+	MdOutlineRestaurantMenu,
+} from "react-icons/md";
+import { BiMapPin } from "react-icons/bi";
+import { CgGym } from "react-icons/cg";
 import Card from "./Card";
 
 export default function Industries() {
@@ -49,14 +33,14 @@ export default function Industries() {
 				<Card
 					shadow={true}
 					align="center"
-					icon={<Icon as={BsBarChartFill} w={10} h={10} />}
-					title="Retail, Ecommerce"
+					icon={<Icon as={RiShoppingBagFill} w={10} h={10} />}
+					title="Retail & Ecommerce"
 					iconBg="green"
 				/>
 				<Card
 					shadow={true}
 					align="center"
-					icon={<Icon as={BsPersonHearts} w={10} h={10} />}
+					icon={<Icon as={FaUserGraduate} w={10} h={10} />}
 					title="Education & e-learning"
 					iconBg="blue"
 				/>
@@ -64,7 +48,7 @@ export default function Industries() {
 				<Card
 					shadow={true}
 					align="center"
-					icon={<Icon as={BiTimer} w={10} h={10} />}
+					icon={<Icon as={CgGym} w={10} h={10} />}
 					title="Healthcare & Fitness"
 					iconBg="orange"
 				/>
@@ -72,36 +56,36 @@ export default function Industries() {
 				<Card
 					shadow={true}
 					align="center"
-					icon={<Icon as={MdSupportAgent} w={10} h={10} />}
+					icon={<Icon as={TbWorldWww} w={10} h={10} />}
 					title="Social Networking"
 					iconBg="red"
 				/>
 				<Card
 					shadow={true}
 					align="center"
-					icon={<Icon as={MdSupportAgent} w={10} h={10} />}
+					icon={<Icon as={BsMegaphone} w={10} h={10} />}
 					title="On-Demand Solutions"
 					iconBg="purple"
 				/>
 				<Card
 					shadow={true}
 					align="center"
-					icon={<Icon as={BiCodeBlock} w={10} h={10} />}
+					icon={<Icon as={MdOutlineRealEstateAgent} w={10} h={10} />}
 					title="Real Estate"
 					iconBg="teal"
 				/>
 				<Card
 					shadow={true}
 					align="center"
-					icon={<Icon as={TbBrandDeliveroo} w={10} h={10} />}
-					title="Travel & Hospitality"
-					iconBg="green.400"
+					icon={<Icon as={MdOutlineRestaurantMenu} w={10} h={10} />}
+					title="Food & Restaurant"
+					iconBg="red"
 				/>
 				<Card
 					shadow={true}
 					align="center"
-					icon={<Icon as={TbBrandDeliveroo} w={10} h={10} />}
-					title="Food & Restaurant"
+					icon={<Icon as={BiMapPin} w={10} h={10} />}
+					title="Travel & Hospitality"
 					iconBg="green.400"
 				/>
 			</Flex>

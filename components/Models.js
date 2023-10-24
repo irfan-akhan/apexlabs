@@ -9,11 +9,10 @@ const Models = () => {
 	return (
 		<Container maxW="container.xl" p={12}>
 			<Heading as="h2">Partnership Models</Heading>
-			<Text as="p" my="3">
-				Hyperlink InfoSystem a leading mobile app development company in
-				USA & India offers custom app development services to wide range
-				of industries and businesses. Know more about our partnership
-				models.
+			<Text as="p" fontSize="xl" my="5">
+				Apexlabs offers custom web and mobile app development services
+				to wide range of industries and businesses. Know more about our
+				partnership models.
 			</Text>
 			<Flex gap="5" wrap="wrap" justify="space-between">
 				<Card

@@ -68,7 +68,15 @@ const BioCard = ({ title, text, icon, iconBg }) => {
 };
 export default function Agencies() {
 	return (
-		<Container p={12} maxW="container.xl" bg="gray.300" minH="70vh">
+		<Container
+			p={12}
+			maxW="container.xl"
+			bg="gray.100"
+			minH="70vh"
+			alignItems="center"
+			display="flex"
+			justifyContent="center"
+		>
 			<SimpleGrid
 				columns={{ base: 1, md: 2 }}
 				spacing={10}
@@ -81,13 +89,12 @@ export default function Agencies() {
 					<Heading fontSize={{ base: "1.4rem", md: "2.5rem" }}>
 						Who We Work With
 					</Heading>
-					<Text color={"gray.500"} fontSize={"lg"}>
-						As a leading mobile app development company in USA and
-						India, we worked with 2000+ businesses either it is a
-						start-up or enterprise and delivers the best solution in
-						the industry. At Hyperlink InfoSystem, we offer a broad
-						range of app development services based on business
-						requirements.
+					<Text color={"gray.700"} fontSize={"lg"}>
+						As web and mobile app development company, we work
+						businesses either it is a start-up or enterprise and
+						delivers the best solution in the industry. At Apexlabs,
+						we offer a broad range of app development services based
+						on business requirements.
 					</Text>
 				</Stack>
 				<Flex
@@ -107,7 +114,7 @@ export default function Agencies() {
 					>
 						<Icon
 							as={IoLogoWebComponent}
-							// color={"yellow.500"}
+							color={"yellow.500"}
 							w={"5rem"}
 							h={"5rem"}
 						/>

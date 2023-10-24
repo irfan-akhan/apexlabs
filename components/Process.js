@@ -65,36 +65,29 @@ export default function Process() {
 				/>
 				<Card
 					align="center"
-					icon={<Icon as={BiTimer} w={10} h={10} />}
-					title="4.Timely Deliver"
-					text="We understand the importance of time-to-market. Our agile development methodology ensures that we meet deadlines and deliver results efficiently."
-					iconBg="orange"
-				/>
-				<Card
-					align="center"
 					icon={<Icon as={FaRegCommentAlt} w={10} h={10} />}
-					title="5.Development"
+					title="4.Development"
 					text="Development of mobile application/web/blockchain started using latest tools and technologies with transparency."
 					iconBg="gold"
 				/>
 				<Card
 					align="center"
 					icon={<Icon as={MdSupportAgent} w={10} h={10} />}
-					title="6.Quality Assurance"
+					title="5.Quality Assurance"
 					text="Hyperlink values quality and provides 100% bug free application with no compromisation in it"
 					iconBg="purple"
 				/>
 				<Card
 					align="center"
 					icon={<Icon as={BiCodeBlock} w={10} h={10} />}
-					title="7.Deployment"
+					title="6.Deployment"
 					text="After trial and following all processes, your app is ready to launch on the App store or Play Store."
 					iconBg="teal"
 				/>
 				<Card
 					align="center"
 					icon={<Icon as={TbBrandDeliveroo} w={10} h={10} />}
-					title="8.Support & Maintenance"
+					title="7.Support & Maintenance"
 					text="Our company offers you all support and the team is always ready to answer every query after deployment."
 					iconBg="green.400"
 				/>

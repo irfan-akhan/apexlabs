@@ -16,7 +16,18 @@ import {
 	IoCartSharp,
 	IoPhonePortraitSharp,
 } from "react-icons/io5";
-import { BiMobileAlt, BiCodeBlock, BiTimer } from "react-icons/bi";
+import {
+	BiMobileAlt,
+	BiCodeBlock,
+	BiTimer,
+	BiInfinite,
+	BiLogoReact,
+	BiLogoPython,
+	BiLogoWordpress,
+	BiLogoMagento,
+	BiLogoNodejs,
+	BiLogoShopify,
+} from "react-icons/bi";
 import {
 	FaInfinity,
 	FaPersonChalkboard,
@@ -24,15 +35,32 @@ import {
 	FaPeopleArrows,
 	FaRegCommentAlt,
 	FaMobileAlt,
+	FaSalesforce,
+	FaApple,
+	FaReact,
+	FaEthereum,
 } from "react-icons/fa";
 import { BsPersonHearts, BsBarChartFill, BsPhoneFill } from "react-icons/bs";
-import { MdSupportAgent } from "react-icons/md";
+import { MdSupportAgent, MdAppShortcut } from "react-icons/md";
 import { TbBrandDeliveroo } from "react-icons/tb";
+import {
+	SiHiveBlockchain,
+	SiBlockchaindotcom,
+	SiBigcommerce,
+	SiJavascript,
+	SiHyperledger,
+	SiSalesforce,
+} from "react-icons/si";
+import { RiLuggageCartLine, RiNftLine, RiFlutterFill } from "react-icons/ri";
+import { AiFillControl, AiFillContainer } from "react-icons/ai";
+import { FcAndroidOs } from "react-icons/fc";
+import { TbBrandKotlin } from "react-icons/tb";
+import { LiaSalesforce } from "react-icons/lia";
 import Card from "./Card";
 
 export default function Services() {
 	return (
-		<Container maxW="container.xl" p={12} bg="#483285">
+		<Container maxW="container.xl" p={12}>
 			<Flex
 				flexDir="column"
 				// columns={{ base: 1, md: 2 }}
@@ -51,15 +79,16 @@ export default function Services() {
 			</Flex>
 			<Flex gap="5" wrap="wrap" justify="center">
 				<Card
+					cardBg="#f9F9F9"
 					width="31%"
-					icon={<Icon as={BsBarChartFill} w={10} h={10} />}
+					icon={<Icon as={MdAppShortcut} w={10} h={10} />}
 					title="App Development"
 					iconBg="green"
 					icons={[
 						{
 							icon: (
 								<Icon
-									as={FaMobileAlt}
+									as={FcAndroidOs}
 									w={7}
 									h={7}
 									color="blue"
@@ -68,11 +97,11 @@ export default function Services() {
 							text: "Android App",
 						},
 						{
-							icon: <Icon as={FaMobileAlt} w={7} h={7} />,
+							icon: <Icon as={FaApple} w={7} h={7} />,
 							text: "iOS App",
 						},
 						{
-							icon: <Icon as={FaMobileAlt} w={7} h={7} />,
+							icon: <Icon as={RiFlutterFill} w={7} h={7} />,
 							text: "Flutter",
 						},
 						{
@@ -80,21 +109,22 @@ export default function Services() {
 							text: "React Native",
 						},
 						{
-							icon: <Icon as={FaMobileAlt} w={7} h={7} />,
+							icon: <Icon as={TbBrandKotlin} w={7} h={7} />,
 							text: "Kotlin",
 						},
 					]}
 				/>
 				<Card
+					cardBg="#f9F9F9"
 					width="31%"
-					icon={<Icon as={BsPersonHearts} w={10} h={10} />}
+					icon={<Icon as={BiCodeBlock} w={10} h={10} />}
 					title="Web Development"
 					iconBg="blue"
 					icons={[
 						{
 							icon: (
 								<Icon
-									as={FaPeopleArrows}
+									as={SiJavascript}
 									w={7}
 									h={7}
 									color="blue"
@@ -103,33 +133,34 @@ export default function Services() {
 							text: "Javascript",
 						},
 						{
-							icon: <Icon as={FaPeopleArrows} w={7} h={7} />,
+							icon: <Icon as={BiLogoWordpress} w={7} h={7} />,
 							text: "WordPress",
 						},
 						{
-							icon: <Icon as={FaPeopleArrows} w={7} h={7} />,
+							icon: <Icon as={BiLogoNodejs} w={7} h={7} />,
 							text: "Nodejs",
 						},
 						{
-							icon: <Icon as={FaPeopleArrows} w={7} h={7} />,
+							icon: <Icon as={FaReact} w={7} h={7} />,
 							text: "React",
 						},
 						{
-							icon: <Icon as={FaPeopleArrows} w={7} h={7} />,
+							icon: <Icon as={BiLogoPython} w={7} h={7} />,
 							text: "Python",
 						},
 					]}
 				/>
 				<Card
+					cardBg="#f9F9F9"
 					width="31%"
-					icon={<Icon as={FaPeopleArrows} w={10} h={10} />}
+					icon={<Icon as={RiLuggageCartLine} w={10} h={10} />}
 					title="Ecommerce Development"
 					iconBg="red"
 					icons={[
 						{
 							icon: (
 								<Icon
-									as={FaPeopleArrows}
+									as={AiFillControl}
 									w={7}
 									h={7}
 									color="blue"
@@ -138,40 +169,67 @@ export default function Services() {
 							text: "Custom Solutions",
 						},
 						{
-							icon: <Icon as={FaPeopleArrows} w={7} h={7} />,
+							icon: <Icon as={BiLogoMagento} w={7} h={7} />,
 							text: "Magento",
 						},
 						{
-							icon: <Icon as={FaPeopleArrows} w={7} h={7} />,
+							icon: <Icon as={SiBigcommerce} w={7} h={7} />,
 							text: "Bigcommerce",
 						},
 						{
-							icon: <Icon as={FaPeopleArrows} w={7} h={7} />,
-							text: "Ubercart",
-						},
-						{
-							icon: <Icon as={FaPeopleArrows} w={7} h={7} />,
+							icon: <Icon as={BiLogoShopify} w={7} h={7} />,
 							text: "Shopify",
 						},
 					]}
 				/>
 				<Card
 					width="31%"
-					icon={<Icon as={BiTimer} w={10} h={10} />}
+					icon={<Icon as={SiHiveBlockchain} w={10} h={10} />}
 					title="Blockchain Development"
-					iconBg="orange"
+					cardBg="#f9F9F9"
+					iconBg="blue"
+					icons={[
+						{
+							icon: (
+								<Icon
+									as={FaEthereum}
+									w={7}
+									h={7}
+									color="blue"
+								/>
+							),
+							text: "Ethereum",
+						},
+						{
+							icon: <Icon as={SiHyperledger} w={7} h={7} />,
+							text: "Hyperledger",
+						},
+						{
+							icon: <Icon as={AiFillContainer} w={7} h={7} />,
+							text: "Smart Contracts",
+						},
+						{
+							icon: <Icon as={SiBlockchaindotcom} w={7} h={7} />,
+							text: "Private Blockchains",
+						},
+						{
+							icon: <Icon as={RiNftLine} w={7} h={7} />,
+							text: "NFT Marketplace",
+						},
+					]}
 				/>
 
 				<Card
 					width="31%"
-					icon={<Icon as={MdSupportAgent} w={10} h={10} />}
+					icon={<Icon as={FaSalesforce} w={10} h={10} />}
 					title="Salesforce Solutions"
+					cardBg="#f9F9F9"
 					iconBg="purple"
 					icons={[
 						{
 							icon: (
 								<Icon
-									as={FaPeopleArrows}
+									as={LiaSalesforce}
 									w={7}
 									h={7}
 									color="blue"
@@ -180,19 +238,20 @@ export default function Services() {
 							text: "Salesforce Development",
 						},
 						{
-							icon: <Icon as={FaPeopleArrows} w={7} h={7} />,
+							icon: <Icon as={SiSalesforce} w={7} h={7} />,
 							text: "Salesforce Consulting",
 						},
 						{
-							icon: <Icon as={FaPeopleArrows} w={7} h={7} />,
+							icon: <Icon as={FaSalesforce} w={7} h={7} />,
 							text: "Salesforce Implementation",
 						},
 					]}
 				/>
 				<Card
 					width="31%"
-					icon={<Icon as={FaRegCommentAlt} w={10} h={10} />}
+					icon={<Icon as={BiInfinite} w={10} h={10} />}
 					title="Devops"
+					cardBg="#f9F9F9"
 					iconBg="gold"
 					text="We Adapt DevOps to Track
 					Development Process For

@@ -9,6 +9,8 @@ import Process from "@/components/Process";
 import Industries from "@/components/Industries";
 import Agencies from "@/components/Agencies";
 import Services from "@/components/Services";
+import Models from "@/components/Models";
+import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -35,6 +37,8 @@ export default function Home() {
 				<Agencies />
 				<Services />
 				<Industries />
+				<Models />
+				<Footer />
 			</main>
 		</>
 	);

@@ -10,10 +10,11 @@ export default function Card({
 	align,
 	shadow,
 	icons = [],
+	cardBg,
 }) {
 	return (
 		<Flex
-			bg="white"
+			bg={cardBg ? cardBg : "white"}
 			color={"black"}
 			rounded={"10"}
 			p="3"
@@ -46,8 +47,8 @@ export default function Card({
 			)}
 			{icons && (
 				<Flex mt="4" gap="3" direction="column">
-					{icons.map((item) => (
-						<Flex>
+					{icons.map((item, idx) => (
+						<Flex key={idx}>
 							{item?.icon}
 							<Text ml="4">{item.text}</Text>
 						</Flex>

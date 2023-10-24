@@ -32,7 +32,7 @@ const BioDesc = ({ text, icon, iconBg }) => {
 			>
 				{icon}
 			</Flex>
-			<Text fontWeight={600}>{text}</Text>
+			<Text fontWeight={600}>{`${text}`}</Text>
 		</Stack>
 	);
 };
@@ -51,8 +51,8 @@ const BioCard = ({ title, text, icon, iconBg }) => {
 			>
 				{icon}
 			</Flex>
-			<Text fontWeight={600}>{title}</Text>
-			<Text color={"gray.600"}>{text}</Text>
+			<Text fontWeight={600}>{`${title}`}</Text>
+			<Text color={"gray.600"}>{`${text}`}</Text>
 		</Stack>
 	);
 };

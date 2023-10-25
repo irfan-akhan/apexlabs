@@ -290,7 +290,7 @@ const NAV_ITEMS = [
 		// 		href: "#",
 		// 	},
 		// ],
-		href: "#company",
+		href: "/#company",
 	},
 	{
 		label: "Services",

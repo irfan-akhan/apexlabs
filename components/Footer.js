@@ -60,10 +60,10 @@ export default function Footer() {
 				/>
 
 				<Stack direction={"row"} spacing={6}>
-					<Box as="a" href={"#"}>
+					<Box as="a" href={"/"}>
 						Home
 					</Box>
-					<Box as="a" href={"#"}>
+					<Box as="a" href={"#about"}>
 						About
 					</Box>
 					<Box as="a" href={"/contact"}>

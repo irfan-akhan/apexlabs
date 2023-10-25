@@ -13,7 +13,6 @@ import {
 	PopoverTrigger,
 	PopoverContent,
 	useColorModeValue,
-	useBreakpointValue,
 	useDisclosure,
 } from "@chakra-ui/react";
 import {
@@ -274,6 +273,11 @@ const MobileNavItem = ({ label, children, href }) => {
 };
 
 const NAV_ITEMS = [
+	{
+		label: "Home",
+
+		href: "/",
+	},
 	{
 		label: "Company",
 		// children: [

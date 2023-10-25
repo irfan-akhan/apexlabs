@@ -11,6 +11,7 @@ import Agencies from "@/components/Agencies";
 import Services from "@/components/Services";
 import Models from "@/components/Models";
 import Footer from "@/components/Footer";
+import QuoteBanner from "@/components/QuoteBanner";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -38,6 +39,7 @@ export default function Home() {
 				<Services />
 				<Industries />
 				<Models />
+				<QuoteBanner />
 				<Footer />
 			</main>
 		</>
